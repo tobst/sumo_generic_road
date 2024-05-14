@@ -1,0 +1,15 @@
+<routes>
+    <vTypeDistribution id="mixed">
+        <vType id="car" vClass="passenger" desiredMaxSpeed="13.88" latAlignment="center" probability="0.9" minGapLat="0.5"/>
+	    <vType id="bike" vClass="bicycle" desiredMaxSpeed="5.55" latAlignment="right" probability="0.1" minGapLat="1.5"/>
+    </vTypeDistribution>
+
+
+    <route id="r0" edges="beg1 end1"/>
+    <flow id="mixed" begin="0" end="900" probability="0.05"  route="r0" type="mixed" departLane="random" departPosLat="random"/>
+
+    <route id="r1" edges="beg2 end2"/>
+    <flow id="cars" begin="0" end="1200" probability="0.05" route="r1" type="car" departLane="random" departPosLat="random"/>
+
+
+</routes>
